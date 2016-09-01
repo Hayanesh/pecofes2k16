@@ -22,9 +22,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class IPL extends AppCompatActivity {
-    private ListView listView;
-    private ArrayAdapter<String> arrayAdapter;
-    private TextView title,topic,description,price,priceamt;
+    private ListView listView,round1_des,round2_des;
+    private ArrayAdapter<String> arrayAdapter,arrayAdapter1,arrayAdapter2;
+    private TextView title,topic,description,price,priceamt,round1,round2;
     private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,40 @@ public class IPL extends AppCompatActivity {
         description.setTypeface(customtypeface1);
         topic.setTypeface(customtypeface);
         title.setTypeface(customtypeface);
+
+        round1= (TextView)findViewById(R.id.ipl_round1_topic);
+        round2=(TextView)findViewById(R.id.ipl_round2_topic);
+        round1.setTypeface(customtypeface);
+        round2.setTypeface(customtypeface1);
+
+        round1_des = (ListView)findViewById(R.id.ipl_round1_abouttopic);
+        String[] rules1 = getResources().getStringArray(R.array.round1_rules);
+        final List<String> rule1 = new ArrayList<String>(Arrays.asList(rules1));
+        arrayAdapter1 = new ArrayAdapter<String>(this,R.layout.mylist,rule1){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view =  super.getView(position, convertView, parent);
+                TextView tv = (TextView)view;
+                tv.setTypeface(customtypeface1);
+                return view;
+            }
+        };
+        round1_des.setAdapter(arrayAdapter1);
+
+        round2_des = (ListView)findViewById(R.id.ipl_round2_abouttopic);
+        String[] rules2 = getResources().getStringArray(R.array.round2_rules);
+        final List<String> rule2 = new ArrayList<String>(Arrays.asList(rules2));
+        arrayAdapter2 = new ArrayAdapter<String>(this,R.layout.mylist,rule2){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view =  super.getView(position, convertView, parent);
+                TextView tv = (TextView)view;
+                tv.setTypeface(customtypeface1);
+                return view;
+            }
+        };
+        round2_des.setAdapter(arrayAdapter2);
+
         listView = (ListView)findViewById(R.id.ipl_abouttopic);
         String[] rules = getResources().getStringArray(R.array.ipl_rules);
         final List<String> rule = new ArrayList<String>(Arrays.asList(rules));

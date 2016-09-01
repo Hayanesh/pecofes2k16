@@ -34,7 +34,7 @@
                         android:layout_height="@dimen/event_cover_height"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:scaleType="fitXY"
-                        android:contentDescription="Mr Mrs Pecofes"
+                        android:contentDescription="Mr Ms Pecofes"
                         android:src="@drawable/mrpec"
                        />
                     <android.support.design.widget.FloatingActionButton

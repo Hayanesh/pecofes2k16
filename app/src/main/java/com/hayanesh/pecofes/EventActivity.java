@@ -138,7 +138,7 @@ public class EventActivity extends MainActivity {
         a = new FestEvent("Photography","WED SEP 28,6:30 PM",  covers[7]);
         eventList.add(a);
 
-        a = new FestEvent("Mr.& Mrs.Pecofes16","WED SEP 28,6:30 PM",  covers[8]);
+        a = new FestEvent("Mr.& Ms.Pecofes16","WED SEP 28,6:30 PM",  covers[8]);
         eventList.add(a);
 
         a = new FestEvent("IPL Auction","WED SEP 28,6:30 PM",  covers[9]);
