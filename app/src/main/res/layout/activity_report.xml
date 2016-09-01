@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hayanesh.pecofes.Report">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/side_nav_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android App Development Team"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:id="@+id/textView"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hayanesh"
+            android:id="@+id/textView2"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Final Year CSE)"
+            android:id="@+id/textView3"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toEndOf="@+id/textView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijaya Kumar"
+            android:id="@+id/textView4"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/textView3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Final Year CSE)"
+            android:id="@+id/textView5"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignStart="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nikilesh"
+            android:textSize="25dp"
+            android:id="@+id/textView6"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/textView5"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Final Year CSE)"
+            android:id="@+id/textView7"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignStart="@+id/textView5" />
+    </RelativeLayout>
+
+</RelativeLayout>

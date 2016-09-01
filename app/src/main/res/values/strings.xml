@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">Pecofes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">About us</string>
+
+
+    <string-array name="event_array">
+        <item>ChoreoNite</item>
+        <item>Fashion Parade</item>
+        <item>Variety Variety</item>
+        <item>Short Film</item>
+        <item>Solo Singing</item>
+        <item>Solo Dance</item>
+        <item>Adapt Tunes</item>
+        <item>Photography</item>
+        <item>Mr.&#38;Ms.Pecofes16</item>
+        <item>IPL Auction</item>
+    </string-array>
+
+    <string name="photo_des">&#160;&#160;Just like to freeze frames and set them apart in eternity, get your DSLRs ready!!!</string>
+    <string-array name="photo_rules">
+        <item>&#187;&#32;The entries must be authorised and original. If Plagiarism is reported, it will severely deal with, leading to expulsion from the fest and future participation. The title/theme will be provided on spot</item>
+        <item>&#187;&#32;Send your photos with a caption to pecofes2k16@gmail.com along with your name , college and mobile number. Send your photos on/before September 12 ,5pm. Based on the number of likes, photos will be selected for the prelims.</item>
+        <item>&#187;&#32;Any number of entries from a single college is entertained</item>
+        <item>&#187;&#32;Entry fees Rs.300 per head</item>
+        <item>&#187;&#32;Photographs must be submitted within 5pm at the event desk with the following details such as Full name, College Name, Department, Year of Study, email id, Contact number</item>
+        <item>&#187;&#32;Entries with a suitable caption will be appreciated. A caption is mandatory</item>
+        <item>&#187;&#32;The received entries should pass vulgarity test, then it will posted on the official Facebook  page of PECOFES 2k16</item>
+        <item>&#187;&#32;Jury’s decision will be final and binding, and are not open to review</item>
+
+    </string-array>
+    <string name="photo_price"></string>
+    <string name="Choreonite_des">&#160;&#160; Music saves more lives than war, so put down your gun and get on the dance floor. !</string>
+    <string-array name="choreo_rules">
+        <item>&#187;&#32; Teams should register at PR desk at PECOFES reception AT LEAST FOUR HOURS before the scheduled time of the event. Late registrations will not be entertained.  </item>
+        <item>&#187;&#32;Team leaders must pick up lots at the time specified by the organizers to decide the order of appearance on stage. The first team must be ready at least half an hour before the scheduled time of beginning of the event. Each team must be ready backstage when preceding team is on stage.  </item>
+        <item>&#187;&#32; Any number of teams from each college is allowed. But the teams should have entirely different participants. There must be no common member. </item>
+        <item>&#187;&#32; Each team is allowed a minimum of 8 to a maximum of 25 dancing members. Additionally, each team can have a maximum of 3 non dancing members for music, lights, narration etc. </item>
+        <item>&#187;&#32;Entry fees Rs. 500 per head</item>
+        <item>&#187;&#32;Time limit: 10 minutes (inclusive of narrating time, etc.) </item>
+        <item>&#187;&#32;There is no language restriction in choosing your songs. </item>
+        <item>&#187;&#32;An official time keeper will be present during the event.</item>
+        <item>&#187;&#32;Timings are to be strictly adhered to. In case of any team exceeding the time limit on stage, the music will be switched off after the designated time. </item>
+        <item>&#187;&#32;There are no restrictions on the choice of music. The music may or may not contain lyrics or spoken words.</item>
+        <item>&#187;&#32;Organizers are not responsible for the loss or damage of personal or confiscated property. </item>
+        <item>&#187;&#32;Use of fire, matches or any other inflammable substances is strictly prohibited. </item>
+        <item>&#187;&#32;Unruly behaviour can result in the disqualification of the team. </item>
+        <item>&#187;&#32;Organizers reserve the right to cancel any event or prize. </item>
+        <item>&#187;&#32;Props and stage settings are allowed but no additional time for set up will be given. Note that props include objects, which are carried by participants.</item>
+        <item>&#187;&#32;Judges’ decisions will be final and are not open to review. </item>
+    </string-array>
+
+    <string name="fashion_des">&#160;&#160;Love the entire rituals of getting dressed, the liturgy of a well crafted, emotional fashion show to realize art in living forms!</string>
+
+    <string-array name="fashion_rules">
+        <item>&#187;&#32;Emphasis will be given to clothing, walking style and originality </item>
+        <item>&#187;&#32;No prop and costumes will be provided by us</item>
+        <item>&#187;&#32;A green room would be provided for changing purpose</item>
+        <item>&#187;&#32;Any number of teams from each college is allowed, But the teams should have entirely different participants. There must be no common member</item>
+        <item>&#187;&#32;A minimum of 10 to a maximum of 25 participants per team</item>
+        <item>&#187;&#32;Entry fees Rs. 500 per head</item>
+        <item>&#187;&#32;Time allotted : 10-12 mins (inclusive of introduction and setup)</item>
+        <item>&#187;&#32;Team leaders must pick up lots at the time specified by the organizers to decide the order of appearance on stage. The first team must be ready at least half an hour before the scheduled time of beginning of the event. Each team must be ready backstage when preceding team is on stage</item>
+        <item>&#187;&#32;Organizers are not responsible for the loss or damage of personal or confiscated property</item>
+        <item>&#187;&#32;Vulgarity in any form is strictly prohibited and may warrant disqualification</item>
+        <item>&#187;&#32;Unruly behaviour can result in the disqualification of the team</item>
+        <item>&#187;&#32;Judges’ decisions will be final and are not open to review</item>
+
+
+    </string-array>
+    <string name="variety_des">&#160;&#160;Variety is the very spice of life...  Give it all its flavour </string>
+    <string-array name="variety_rules">
+        <item>&#187;&#32;A team or an individual can participate</item>
+        <item>&#187;&#32;There is no restriction on the number of participants per college</item>
+        <item>&#187;&#32;There is no restriction with regard to scripts</item>
+        <item>&#187;&#32;Original, pre-written scripts and adaptations are welcome</item>
+        <item>&#187;&#32;No fire or water allowed on stage</item>
+        <item>&#187;&#32;Entry fees Rs.300 per head</item>
+        <item>&#187;&#32;Participants will be held responsible for any damage to the auditorium</item>
+        <item>&#187;&#32;No obscenities will be permitted on stage</item>
+        <item>&#187;&#32;Maximum time of 15 minutes (inclusive of  introduction and set up)</item>
+        <item>&#187;&#32;Participants are requested to bring their audio tracks in USB drive and CDs which should be submitted 30 minutes prior rot he event</item>
+        <item>&#187;&#32;Lots will be picked 30 min. prior to the event</item>
+        <item>&#187;&#32;Pre recording of music are not allowed</item>
+        <item>&#187;&#32;Performances mimicry, monoact, skit, puppet show or any form of variety entertainment</item>
+        <item>&#187;&#32;Judges and Organizers decision will be final and are not open to review</item>
+    </string-array>
+
+
+    <string name="short_des">&#160;&#160;Go out and make something that reflects your interest, your taste and your idea. </string>
+    <string-array name="short_rules">
+        <item>&#187;&#32;The entries must be authorized and original. If Plagiarism is reported, it will severely deal with, leading to expulsion from the fest and future participation</item>
+        <item>&#187;&#32;Any number of entries from a single college is entertained</item>
+        <item>&#187;&#32;First 25 registered entries only will be projected , the remaining entries will not be taken into consideration</item>
+        <item>&#187;&#32;Entry fees Rs.500 per film</item>
+        <item>&#187;&#32;Maximum time: 12minutes including the time for titles and credits</item>
+        <item>&#187;&#32;Entries with written screenplay and script will be appreciated. But not mandatory</item>
+        <item>&#187;&#32;The CD/DVD  or USB containing the entry must be submitted on or before 30minutes of the event commencing</item>
+        <item>&#187;&#32;Vulgarity or obscenity in an entry will not be tolerated and will lead to disqualification</item>
+        <item>&#187;&#32;Make sure that your entry will be in the following standard formats such as AVI, VOB or MPEG</item>
+        <item>&#187;&#32;Presence of the participant is not a must. The CD or DVD can be sent by postal mail</item>
+        <item>&#187;&#32;Video quality should be clear enough for viewing using a projector during its screening</item>
+        <item>&#187;&#32;Judges’ decisions will be final and binding, and are not open to review</item>
+
+    </string-array>
+
+
+    <string name="solo_des">&#160;&#160;The energy you give off is the energy you receive... Release the emotion...  Heal the situation... Open into the light  </string>
+    <string-array name="solo_rules">
+        <item>&#187;&#32;Performer should register only at the PR desk at PECOFES reception ATLEAST two hours before the scheduled time of the event. Late registrations will be entertained subject to the number of performers and the time available</item>
+        <item>&#187;&#32;There are no restrictions on the choice of music</item>
+        <item>&#187;&#32;Time Limit: Maximum of 5 minutes and minimum of 2 minutes are allowed per performance</item>
+        <item>&#187;&#32;Entry fees Rs.200 per head</item>
+        <item>&#187;&#32;Every performer should report at the music desk on stage</item>
+        <item>&#187;&#32;Organizers reserve the right to cancel the event or prize</item>
+        <item>&#187;&#32;Karaoke or minus one tracks are permitted and should be submitted half  n-hour before the event</item>
+        <item>&#187;&#32;One additional person will be allowed to accompany the participant to play an instrument</item>
+        <item>&#187;&#32;Participants will have to attend preliminary round in which he/she should sing a song for 3 minutes</item>
+        <item>&#187;&#32;Judges decision will be final</item>
+
+
+    </string-array>
+
+
+    <string name="dance_des">&#160;&#160;Dancing with the feet is one thing,but Dancing with the heart is another </string>
+    <string-array name="dance_rules">
+        <item>&#187;&#32;But registration must be done at the PR desk at PECOFES reception ATLEAST two hours before the scheduled time of the event</item>
+        <item>&#187;&#32;Entry fees Rs.300 per head</item>
+        <item>&#187;&#32;Late registrations will be entertained subject to the number of performers and the time available</item>
+        <item>&#187;&#32;There are no restrictions on the choice of music</item>
+        <item>&#187;&#32;Time Limit: Maximum of 5 minutes and minimum of 2 minutes are allowed per performance</item>
+        <item>&#187;&#32;Every performer should report at the music desk on stage</item>
+        <item>&#187;&#32;Organizers reserve the right to cancel the event or prize</item>
+        <item>&#187;&#32;The participant must submit the track at the event desk well in advance</item>
+
+    </string-array>
+
+    <string name="mrpec_title">Mr.&#38;Ms.Pecofes16</string>
+    <string name="mrpec_des">&#160;&#160;. For the first time in Pecofes History, here comes an exciting event testing your spontaneity, creativity and humor. An opportunity to become the celebrity of PEC.</string>
+    <string-array name="mrpec_rules">
+
+        <item>&#187;&#32;Write a love letter (English/Tamil). </item>
+        <item>&#187;&#32;The best 20 love letters will be selected for the event</item>
+        <item>&#187;&#32;You’ll have to face on spot rounds and the one with best rating overall will bag the title</item>
+        <item>&#187;&#32;Entry fees Rs.200 per head</item>
+        <item>&#187;&#32;Submit your entries as ‘.doc’ file to the mail id pecofes2k16@gmail.com </item>
+
+    </string-array>
+
+    <string name="adapt_des">&#160;&#160;Unplanned,Random and Spontaneous.Adapt and dance to the changing tunes.</string>
+    <string-array name="adapt_rules">
+        <item>&#187;&#32;The maximum time allowed for participant is 4 minutes. </item>
+        <item>&#187;&#32;For group dance maximum 4 members are only allowed.</item>
+        <item>&#187;&#32;The different tunes or songs will be given to the participants on the spot.</item>
+        <item>&#187;&#32;The participant should have to dance according to the change in tunes.</item>
+        <item>&#187;&#32;One song will last for one minute.</item>
+        <item>&#187;&#32;Entry fees Rs. 200 per head</item>
+
+    </string-array>
+
+    <string name="ipl_des">&#160;&#160;</string>
+    <string name="dev_des">App Development Team</string>
+    <string-array name="round1_rules">
+        <item>&#187;&#32;This round involves a group quiz contest</item>
+        <item>&#187;&#32;This round tests your cricket knowledge</item>
+        <item>&#187;&#32;The top five teams qualify for the next round</item>
+    </string-array>
+    <string-array name="round2_rules">
+        <item>&#187;&#32;This is the final round among the five teams</item>
+        <item>&#187;&#32;With the virtual money given to each team, the teams have to bid the cricket players showcased in the auction</item>
+        <item>&#187;&#32;Each team has to form an 11 member playing team and a mentor </item>
+        <item>&#187;&#32;The playing team should be formed in such a way that it must have a perfect playing XI</item>
+        <item>&#187;&#32;Among these 11 playing team that is formed, there must be 4 foreign players</item>
+    </string-array>
+    <string-array name="ipl_rules">
+        <item>&#187;&#32;Entry  fee Rs.300 per team</item>
+        <item>&#187;&#32;Each team should have 4 members</item>
+        <item>&#187;&#32;All team members should be present for the two rounds</item>
+        <item>&#187;&#32;The decision of the judges will be final</item>
+        <item>&#187;&#32;These rules are subject to change depending on the situation</item>
+    </string-array>
+    <string-array name="contact">
+        <item>Suresh.G              : 9790498687</item>
+        <item>Sheik Abdul Azeem.A   : 9952358777</item>
+        <item>Kishore Kumar.B       : 9500898882</item>
+        <item>Reventh.D             : 9677544872</item>
+        <item>Soorya.R.T            : 8220311165</item>
+        <item>Vimalraj.S            : 9600661998</item>
+        <item>Rajkumar.K            : 7092205315</item>
+        <item>Deepan.P              : 9489687612</item>
+    </string-array>
+    <string-array name="pubcontact">
+        <item>Naveen Prasanth.S     : 9443626421</item>
+        <item>Sarath                : 9944073391</item>
+    </string-array>
+
+    <string-array name="acccontact">
+        <item>Vinoth Kumar          : 7598123558</item>
+        <item>Agathiswaren          : 8903968358</item>
+    </string-array>
+</resources>

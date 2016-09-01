@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b26af</color>
+    <color name="colorPrimaryDark">#741EA1</color>
+    <color name="colorAccent">#68efad</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="event_schedule">#ffffff</color>
+    <color name="event_name">#0d0d0d</color>
+    <color name="event_title">#000000</color>
+    <color name="event_description">#000000</color>
+    <color name="splash_logo">#ffff66</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+</resources>

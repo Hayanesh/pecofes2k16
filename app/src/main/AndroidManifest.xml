@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hayanesh.pecofes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_flat"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TitleCard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registration"
+            android:label="Registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Choreonite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Facebookpage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FashionParade"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Variety"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShortFilms"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SoloSinging"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdaptTunes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MrPec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IPL"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Website" />
+        <activity
+            android:name=".Report"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ContactDetails"
+            android:label="Contact Details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
