@@ -31,7 +31,6 @@ import com.bumptech.glide.Glide;
 import com.plattysoft.leonids.ParticleSystem;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,View.OnTouchListener {
@@ -48,11 +47,6 @@ public class MainActivity extends AppCompatActivity
 
         //Custom Font-Not working
 
-        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/DancingScript-Regular.ttf")
-                .setFontAttrId(R.attr.fontPath)
-                .build()
-        );
 
         setContentView(R.layout.activity_main);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -145,14 +139,18 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         } else if (id == R.id.nav_gallery) {
-            Intent event = new Intent(getApplicationContext(),EventActivity.class);
-            startActivity(event);
+            if(!"EventActivity".equals(this.getClass().getSimpleName().toString())) {
+                Intent event = new Intent(getApplicationContext(), EventActivity.class);
+                startActivity(event);
+            }
         } else if (id == R.id.nav_slideshow) {
+            if(!"ContactDetails".equals(this.getClass().getSimpleName().toString())){
             Intent i = new Intent(getApplicationContext(),ContactDetails.class);
-            startActivity(i);
+            startActivity(i);}
         } else if (id == R.id.nav_manage) {
+            if(!"Registration".equals(this.getClass().getSimpleName().toString())){
                 Intent registration = new Intent(getApplicationContext(),Registration.class);
-                startActivity(registration);
+                startActivity(registration);}
         } else if (id == R.id.nav_share) {
             Intent fb = new Intent(getApplicationContext(),Website.class);
             startActivity(fb);

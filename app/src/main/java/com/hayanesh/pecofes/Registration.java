@@ -63,6 +63,7 @@ public class Registration extends MainActivity{
     String event,team="NIL";
     static int position;
     static int editview_counter = 0;
+    String key;
     final int N = 10; // total number of textviews to add
     final EditText[] myTextViews = new EditText[N];
     @Override
@@ -79,7 +80,7 @@ public class Registration extends MainActivity{
         sender = new GMailSender("pecofes16@gmail.com", "pecian16");
 
         coordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinatorlayout);
-        snackbar = Snackbar.make(coordinatorLayout,"Registraion Successful",Snackbar.LENGTH_LONG);
+        snackbar = Snackbar.make(coordinatorLayout,"Registration Successful",Snackbar.LENGTH_LONG);
         View sb = snackbar.getView();
         TextView tw= (TextView)sb.findViewById(android.support.design.R.id.snackbar_text);
         tw.setTextColor(Color.YELLOW);
@@ -129,18 +130,6 @@ public class Registration extends MainActivity{
             }
         });
 
-        materialDesignSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                position = adapterView.getSelectedItemPosition();
-                System.out.println(position);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
         _signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,16 +193,9 @@ public class Registration extends MainActivity{
         protected Void doInBackground(Void... mApi) {
             try {
                 // Add subject, Body, your mail Id, and receiver mail Id.
-                sender.sendMail("Registeration Details", message,email, "pecofes2k16@pec.edu");
-
-                Person p = new Person();
-                p.setName(name);
-                p.setEmail(email);
-                p.setPhone(phone_num);
-                p.setEvent(event);
-                p.setTeam(estimateTeam());
-                addPerson(p);
-
+                sender.sendMail("Registration Details", message,email, "pecofes2k16@gmail.com");
+                FirebaseDB();
+                reverseAuthendication();
             }
 
             catch (Exception ex) {
@@ -226,12 +208,30 @@ public class Registration extends MainActivity{
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
             progressDialog.dismiss();
-
+            snackbar.show();
 
         }
     }
 
+    public void reverseAuthendication()
+    {
+        try {
+            sender.sendMail("Thanks for registration","Registration ID: "+key+"\n"+"Registration Details: "+message,"pecofes2k16@gmail.com",email);
+        } catch (Exception e) {
+           Toast.makeText(getApplicationContext(),"Invalid Mail id",Toast.LENGTH_LONG).show();
+        }
+    }
 
+    public void FirebaseDB()
+    {
+        Person p = new Person();
+        p.setName(name);
+        p.setEmail(email);
+        p.setPhone(phone_num);
+        p.setEvent(event);
+        p.setTeam(estimateTeam());
+        addPerson(p);
+    }
     public void addPerson(Person model) {
         Person person = new Person();
         person.setName(model.getName());
@@ -239,13 +239,14 @@ public class Registration extends MainActivity{
         person.setPhone(model.getPhone());
         person.setEvent(model.getEvent());
         person.setTeam(model.getTeam());
-        String key = databaseReference.child("Participants").push().getKey();
+        key = databaseReference.child("Participants").push().getKey();
         Map<String, Object> postValues = person.toMap();
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put(key, postValues);
         databaseReference.updateChildren(childUpdates);
-        snackbar.show();
+
+
     }
 
 
