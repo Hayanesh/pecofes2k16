@@ -1,0 +1,3 @@
+CREATE TABLE `firebasedb`.`Participants` ( `id` INT(10) NOT NULL AUTO_INCREMENT ,  `FBkey` VARCHAR(40) NOT NULL ,  `event` VARCHAR(40) NOT NULL ,  `email` VARCHAR(40) NOT NULL ,  `name` VARCHAR(40) NOT NULL ,  `phone` VARCHAR(40) NOT NULL ,  `team` VARCHAR(50) NOT NULL ,    PRIMARY KEY  (`id`) ) ENGINE = InnoDB;
+
+ALTER TABLE `participants` ADD UNIQUE( `FBkey`);
