@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "587579740634",
+    "firebase_url": "https://pecofes-50edf.firebaseio.com",
+    "project_id": "pecofes-50edf",
+    "storage_bucket": "pecofes-50edf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587579740634:android:6a3fcc6a162d677b",
+        "android_client_info": {
+          "package_name": "com.hayanesh.pecofes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587579740634-4cskcjjr4q4gqtgertq4pluik096p5m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8hauVvmgyB58XvBK96SoLbHEeZZdDwU0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

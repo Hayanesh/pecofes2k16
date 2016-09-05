@@ -35,10 +35,20 @@ import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class Registration extends MainActivity{
     GMailSender sender;
     private static final String TAG = "SignupActivity";
-
+    private DatabaseReference databaseReference;
     @Bind(R.id.input_name) EditText _nameText;
     @Bind(R.id.input_email) EditText _emailText;
     @Bind(R.id.input_number) EditText _numberText;
@@ -80,6 +90,11 @@ public class Registration extends MainActivity{
         materialDesignSpinner = (MaterialBetterSpinner)
                 findViewById(R.id.events_name);
         materialDesignSpinner.setAdapter(arrayAdapter);
+
+        //DBase connectivity
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
+
 
 
         _switch.setChecked(false);
@@ -158,7 +173,7 @@ public class Registration extends MainActivity{
             for(int i=0;i<editview_counter;i++)
             {
                 t[i]=myTextViews[i].getText().toString();
-                stringBuffer.append(t[i]+"\n");
+                stringBuffer.append(t[i]+"**");
             }
             team = stringBuffer.toString();
         }
@@ -189,11 +204,20 @@ public class Registration extends MainActivity{
         protected Void doInBackground(Void... mApi) {
             try {
                 // Add subject, Body, your mail Id, and receiver mail Id.
-                sender.sendMail("Registeration Details", message,email, "pecofes2k16@gmail.com");
+                sender.sendMail("Registeration Details", message,email, "pecofes2k16@pec.edu");
+
+                Person p = new Person();
+                p.setName(name);
+                p.setEmail(email);
+                p.setPhone(phone_num);
+                p.setEvent(event);
+                p.setTeam(estimateTeam());
+                addPerson(p);
+
             }
 
             catch (Exception ex) {
-                Log.e("Message Failde", ex.toString());
+                Log.e("Message Failed", ex.toString());
             }
             return null;
         }
@@ -202,9 +226,26 @@ public class Registration extends MainActivity{
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
             progressDialog.dismiss();
-            snackbar.show();
+
 
         }
+    }
+
+
+    public void addPerson(Person model) {
+        Person person = new Person();
+        person.setName(model.getName());
+        person.setEmail(model.getEmail());
+        person.setPhone(model.getPhone());
+        person.setEvent(model.getEvent());
+        person.setTeam(model.getTeam());
+        String key = databaseReference.child("Participants").push().getKey();
+        Map<String, Object> postValues = person.toMap();
+
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put(key, postValues);
+        databaseReference.updateChildren(childUpdates);
+        snackbar.show();
     }
 
 
@@ -236,7 +277,14 @@ public class Registration extends MainActivity{
         } else {
             _numberText.setError(null);
         }
+        if (event.isEmpty()){
+            materialDesignSpinner.setError("Select an event");
+            valid = false;
+        }else {
+            materialDesignSpinner.setError(null);
+        }
 
         return valid;
     }
+
 }
