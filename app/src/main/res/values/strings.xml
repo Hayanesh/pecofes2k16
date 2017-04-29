@@ -18,6 +18,7 @@
         <item>Photography</item>
         <item>Mr.&#38;Ms.Pecofes16</item>
         <item>IPL Auction</item>
+        <item>Literary Events</item>
     </string-array>
 
     <string name="photo_des">&#160;&#160;Just like to freeze frames and set them apart in eternity, get your DSLRs ready!!!</string>
@@ -192,13 +193,41 @@
         <item>Rajkumar.K            : 7092205315</item>
         <item>Deepan.P              : 9489687612</item>
     </string-array>
-    <string-array name="pubcontact">
-        <item>Naveen Prasanth.S     : 9443626421</item>
-        <item>Sarath                : 9944073391</item>
-    </string-array>
 
     <string-array name="acccontact">
         <item>Vinoth Kumar          : 7598123558</item>
         <item>Agathiswaren          : 8903968358</item>
+    </string-array>
+    <string name="literary_des">
+        They say actions speak louder than words. Lets see if thats true.
+    </string>
+    <string name="rules_dumb">
+        Dumb charades
+    </string>
+    <string name="rules_ship">
+        Ship Wreck
+    </string>
+    <string name="rules_block">
+        Block &#38; tackle
+    </string>
+    <string-array name="rules_dumb_des">
+        <item>&#187;&#32;A team of three can participate</item>
+        <item>&#187;&#32;Find the word by helping your teammates only with actions</item>
+        <item>&#187;&#32;The team which finds the maximum words will be awarded with prizes</item>
+        <item>&#187;&#32;per team 100/-</item>
+
+    </string-array>
+    <string-array name="rules_ship_des">
+        <item>&#187;&#32;A solo event. (1-participant) </item>
+        <item>&#187;&#32;An imaginary situation in which a ship is about to sink only one life jacket is left. The participant will be given with a personality name and should justify why the personality should be saved</item>
+        <item>&#187;&#32;The best justification will be given prize</item>
+        <item>&#187;&#32;per head 100/-</item>
+    </string-array>
+    <string-array name="rules_block_des">
+        <item>&#187;&#32;A solo event. (1-participant) </item>
+        <item>&#187;&#32;A topic will be given, on the call of block the participant has to talk about the negativities of topic, on the call of tackle the participant has to support the topic</item>
+        <item>&#187;&#32;The most versatile participant will be given prize</item>
+        <item>&#187;&#32;per head 100/-</item>
+
     </string-array>
 </resources>

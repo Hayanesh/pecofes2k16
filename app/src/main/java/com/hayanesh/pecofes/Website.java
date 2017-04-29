@@ -12,6 +12,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
+import static com.hayanesh.pecofes.Config.eventWeb;
+
 public class Website extends Activity {
 
     //private Button button;
@@ -23,7 +25,7 @@ public class Website extends Activity {
 
         //Get webview
         webView = (WebView) findViewById(R.id.webView);
-        startWebView("http:\\www.pecofes2k16.com");
+        startWebView(eventWeb);
         webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
     }
 

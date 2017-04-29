@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -72,9 +72,13 @@
         <activity
             android:name=".Report"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ContactDetails"
+        <activity
+            android:name=".ContactDetails"
             android:label="Contact Details"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Literary"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Literary Events"></activity>
     </application>
 
 </manifest>

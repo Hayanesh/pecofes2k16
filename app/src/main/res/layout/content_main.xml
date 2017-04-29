@@ -52,6 +52,175 @@
                 android:textSize="20dp"
                 android:textColor="#36241f"
                 android:id="@+id/title_des" />
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:baselineAligned="false"
+                    android:layout_below="@+id/title_des"
+                    android:layout_alignEnd="@+id/thumbnail"
+                    android:layout_alignStart="@+id/thumbnail">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTimerDay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/holo_red_light"
+                            android:background="@color/design_fab_shadow_start_color" />
+
+                        <TextView
+                            android:id="@+id/txt_TimerDay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Days"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTimerHour"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/holo_red_light"
+                            android:background="@color/design_fab_shadow_start_color" />
+
+                        <TextView
+                            android:id="@+id/txt_TimerHour"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Hour"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTimerMinute"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/holo_red_light"
+                            android:background="@color/design_fab_shadow_start_color" />
+
+                        <TextView
+                            android:id="@+id/txt_TimerMinute"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Minute"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txtTimerSecond"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/holo_red_light"
+                            android:background="@color/design_fab_shadow_start_color" />
+
+                        <TextView
+                            android:id="@+id/txt_TimerSecond"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="Second"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/title_des"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/tvEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:foregroundGravity="center_horizontal"
+                        android:textSize="20dp"
+                        android:text="The celebration begins...!"
+                        android:visibility="invisible"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:text="to kick start.."
+                        android:id="@+id/countdown"
+                        android:layout_alignBottom="@+id/ll2"
+                        android:layout_toEndOf="@+id/ll2"
+                        android:layout_weight="0.34"
+                        android:gravity="right"
+                        android:layout_marginLeft="40dp" />
+                </LinearLayout>
+
             </RelativeLayout>
             </android.support.v7.widget.CardView>
 

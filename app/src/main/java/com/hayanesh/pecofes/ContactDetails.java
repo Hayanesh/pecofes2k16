@@ -18,7 +18,7 @@ import com.daimajia.easing.quint.QuintEaseIn;
 import java.lang.reflect.Array;
 
 public class ContactDetails extends MainActivity {
-    private ListView listView,publist,acclist;
+    private ListView listView,acclist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +32,6 @@ public class ContactDetails extends MainActivity {
                 "8220311165",
                 "9600661998",
                 "7092205315",
-                "9489687612",
-                "9443626421",
                 "9944073391",
                 "7598123558",
                 ""
@@ -43,7 +41,6 @@ public class ContactDetails extends MainActivity {
         View contentView = inflater.inflate(R.layout.activity_contact_details, null, false);
         drawer.addView(contentView, 0);
         acclist = (ListView)findViewById(R.id.accname);
-        publist = (ListView)findViewById(R.id.prname);
         listView = (ListView)findViewById(R.id.contactname);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -54,19 +51,11 @@ public class ContactDetails extends MainActivity {
             }
         });
 
-        publist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent phone = new Intent(Intent.ACTION_DIAL);
-                phone.setData(Uri.parse("tel:"+phoneno[8+i]));
-                startActivity(phone);
-            }
-        });
         acclist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent phone = new Intent(Intent.ACTION_DIAL);
-                phone.setData(Uri.parse("tel:"+phoneno[10+i]));
+                phone.setData(Uri.parse("tel:"+phoneno[8+i]));
                 startActivity(phone);
             }
         });

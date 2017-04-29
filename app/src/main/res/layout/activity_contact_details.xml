@@ -61,50 +61,7 @@
         </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="10dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:id="@+id/pub"
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/side_nav_bar">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:textSize="25dp"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:text="PR incharge"
-                            android:textColor="#ffffff"
-                            android:id="@+id/pubtitle" />
-                    </LinearLayout>
-                    <ListView
-                        android:layout_margin="0dp"
-                        android:scrollbars="none"
-                        android:id="@+id/prname"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_below="@+id/pub"
-                        android:paddingLeft="@dimen/event_description_padding"
-                        android:paddingRight="@dimen/event_description_padding"
-                        android:paddingTop="@dimen/event_description_padding"
-                        android:divider="@android:color/transparent"
-                        android:dividerHeight="5dp"
-                        android:entries="@array/pubcontact"
-                        android:foregroundGravity="left"
-                        android:listSelector="@android:color/transparent"
-                        />
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

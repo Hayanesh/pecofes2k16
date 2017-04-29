@@ -44,6 +44,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.hayanesh.pecofes.Config.mailId;
+import static com.hayanesh.pecofes.Config.mailPass;
+
 
 public class Registration extends MainActivity{
     GMailSender sender;
@@ -77,7 +80,7 @@ public class Registration extends MainActivity{
         drawer.addView(contentView, 0);
         ButterKnife.bind(this);
 
-        sender = new GMailSender("pecofes16@gmail.com", "pecian16");
+        sender = new GMailSender(mailId, mailPass);
 
         coordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinatorlayout);
         snackbar = Snackbar.make(coordinatorLayout,"Registration Successful",Snackbar.LENGTH_LONG);
@@ -193,7 +196,7 @@ public class Registration extends MainActivity{
         protected Void doInBackground(Void... mApi) {
             try {
                 // Add subject, Body, your mail Id, and receiver mail Id.
-                sender.sendMail("Registration Details", message,email, "pecofes2k16@gmail.com");
+                sender.sendMail("Registration Details", message,email,"pecofes2k16@gmail.com");
                 FirebaseDB();
                 reverseAuthendication();
             }

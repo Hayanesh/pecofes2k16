@@ -184,6 +184,18 @@ public class FestEventAdapter extends RecyclerView.Adapter<FestEventAdapter.MyVi
                     }
                 });
                 break;
+            case 10:
+                holder.moreinfo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+
+                        Intent i = new Intent(mContext, Literary.class);
+                        mContext.startActivity(i);
+
+                    }
+                });
+                break;
 
         }
     }

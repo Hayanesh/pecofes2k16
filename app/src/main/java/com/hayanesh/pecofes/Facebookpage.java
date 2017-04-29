@@ -12,6 +12,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
+import static com.hayanesh.pecofes.Config.eventFb;
+
 public class Facebookpage extends Activity {
 
     //private Button button;
@@ -23,7 +25,7 @@ public class Facebookpage extends Activity {
 
         //Get webview
         webView = (WebView) findViewById(R.id.webView);
-        startWebView("https://m.facebook.com/Pecofes-2k16-889231904502597/");
+        startWebView(eventFb);
         webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
     }
 

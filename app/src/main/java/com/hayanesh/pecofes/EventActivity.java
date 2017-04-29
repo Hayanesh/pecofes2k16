@@ -27,8 +27,6 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
-import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
-import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;
 
 public class EventActivity extends MainActivity {
     private RecyclerView recyclerView;
@@ -111,6 +109,7 @@ public class EventActivity extends MainActivity {
                 R.drawable.photo,
                 R.drawable.mrpec,
                 R.drawable.ipl,
+                R.drawable.lit
 
         };
 
@@ -142,6 +141,9 @@ public class EventActivity extends MainActivity {
         eventList.add(a);
 
         a = new FestEvent("IPL Auction","WED SEP 28,6:30 PM",  covers[9]);
+        eventList.add(a);
+
+        a = new FestEvent("Literary Events","WED SEP 28,6:30 PM",  covers[10]);
         eventList.add(a);
         adapter.notifyDataSetChanged();
     }

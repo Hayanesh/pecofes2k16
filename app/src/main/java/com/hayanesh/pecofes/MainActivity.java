@@ -1,9 +1,11 @@
 package com.hayanesh.pecofes;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.media.Image;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -31,6 +33,9 @@ import com.bumptech.glide.Glide;
 import com.plattysoft.leonids.ParticleSystem;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,View.OnTouchListener {
@@ -39,6 +44,10 @@ public class MainActivity extends AppCompatActivity
         protected DrawerLayout drawer;
         private TextView textView;
         public Typeface customtypeface;
+        private TextView tvDay, tvHour, tvMinute, tvSecond,tvEvent,tvDaytxt, tvHourtxt, tvMinutetxt, tvSecondtxt,countdes;
+        private LinearLayout linearLayout1, linearLayout2;
+        private Handler handler;
+        private Runnable runnable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -72,6 +81,8 @@ public class MainActivity extends AppCompatActivity
         textView =(TextView)findViewById(R.id.title_des);
         customtypeface = Typeface.createFromAsset(getAssets(),"fonts/DancingScript-Regular.ttf");
         textView.setTypeface(customtypeface);
+        initUI();
+        countDownStart();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View header=navigationView.getHeaderView(0);
         TextView textView1 = (TextView)header.findViewById(R.id.nav_textView1);
@@ -163,4 +174,72 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    @SuppressLint("SimpleDateFormat")
+    private void initUI() {
+       // linearLayout1 = (LinearLayout) findViewById(R.id.ll1);
+        linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
+        tvDay = (TextView) findViewById(R.id.txtTimerDay);
+        tvHour = (TextView) findViewById(R.id.txtTimerHour);
+        tvMinute = (TextView) findViewById(R.id.txtTimerMinute);
+        tvSecond = (TextView) findViewById(R.id.txtTimerSecond);
+        tvDaytxt = (TextView) findViewById(R.id.txt_TimerDay);
+        tvHourtxt = (TextView) findViewById(R.id.txt_TimerHour);
+        tvMinutetxt = (TextView) findViewById(R.id.txt_TimerMinute);
+        tvSecondtxt = (TextView) findViewById(R.id.txt_TimerSecond);
+        countdes = (TextView)findViewById(R.id.countdown);
+        countdes.setTypeface(customtypeface);
+        tvDaytxt.setTypeface(customtypeface);
+        tvHourtxt.setTypeface(customtypeface);
+        tvMinutetxt.setTypeface(customtypeface);
+        tvSecondtxt.setTypeface(customtypeface);
+        tvEvent = (TextView) findViewById(R.id.tvEvent);
+        tvEvent.setTypeface(customtypeface);
+    }
+
+    // //////////////COUNT DOWN START/////////////////////////
+    public void countDownStart() {
+        handler = new Handler();
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                handler.postDelayed(this, 1000);
+                try {
+                    SimpleDateFormat dateFormat = new SimpleDateFormat(
+                            "yyyy-MM-dd");
+                    // Here Set your Event Date
+                    Date futureDate = dateFormat.parse("2016-09-14");
+                    Date currentDate = new Date();
+                    if (!currentDate.after(futureDate)) {
+                        long diff = futureDate.getTime()
+                                - currentDate.getTime();
+                        long days = diff / (24 * 60 * 60 * 1000);
+                        diff -= days * (24 * 60 * 60 * 1000);
+                        long hours = diff / (60 * 60 * 1000);
+                        diff -= hours * (60 * 60 * 1000);
+                        long minutes = diff / (60 * 1000);
+                        diff -= minutes * (60 * 1000);
+                        long seconds = diff / 1000;
+                        tvDay.setText("" + String.format("%02d", days));
+                        tvHour.setText("" + String.format("%02d", hours));
+                        tvMinute.setText("" + String.format("%02d", minutes));
+                        tvSecond.setText("" + String.format("%02d", seconds));
+                    } else {
+                        tvEvent.setVisibility(View.VISIBLE);
+                        countdes.setVisibility(View.GONE);
+                        linearLayout2.setVisibility(View.GONE);
+
+                        handler.removeCallbacks(runnable);
+                        // handler.removeMessages(0);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        handler.postDelayed(runnable, 0);
+    }
+
+    // //////////////COUNT DOWN END/////////////////////////
 }
+
